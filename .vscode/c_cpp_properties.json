@@ -1,0 +1,30 @@
+{
+  "configurations": [  // 配置数组
+      {
+        "name": "Win32",  
+        // 配置的名称，通常用于在多个配置之间进行选择
+        
+        "includePath": ["${workspaceFolder}/src/**"],  
+        // 编译器的包含路径，"${workspaceFolder}/**" 表示工作空间下的所有文件和文件夹
+        
+        "defines": ["_DEBUG", "UNICODE", "_UNICODE"],  
+        // 预处理器定义，这些定义通常用于条件编译
+        
+        "windowsSdkVersion": "10.0.17763.0",  
+        // Windows SDK 的版本，这通常影响 Windows API 的可用性
+        
+        "compilerPath": "D:\\MinGW64\\bin\\g++.exe",  
+        // 指定编译器的路径，这里是 g++ 的路径
+        
+        "cStandard": "c17",  
+        // 使用的 C 语言标准。可选项如："c89", "c99", "c11" 等
+        
+        "cppStandard": "c++20",  
+        // 使用的 C++ 语言标准。可选项如："c++98", "c++11", "c++14", "c++17" 等
+        
+        "intelliSenseMode": "${default}"  
+        // IntelliSense 的模式，"${default}" 会根据你的平台和编译器自动选择
+      }
+  ],
+  "version": 4  // 文件格式的版本
+}
